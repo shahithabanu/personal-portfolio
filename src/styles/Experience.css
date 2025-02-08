@@ -1,0 +1,137 @@
+/* Light Mode (Default) */
+.experience {
+  padding: 50px 10%;
+  background: #f4f4f4;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.job {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.job h3 {
+  font-size: 1.5rem;
+  color: #6a11cb;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #6a11cb;
+  font-size: 1.5rem;
+}
+
+.job p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.job ul li {
+  font-size: 1rem;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.job ul li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #6a11cb;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ✅ Dark Mode Styles */
+.dark-mode .experience {
+  background: #121212;
+  color: #f9f9f9;
+}
+
+.dark-mode .job {
+  background: #1e1e1e;
+  color: #f9f9f9;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode h2 {
+  color: #f9f9f9;
+}
+
+.dark-mode .job h3 {
+  color: #a970ff;
+}
+
+.dark-mode .icon {
+  color: #a970ff;
+}
+
+.dark-mode .job ul li::before {
+  color: #a970ff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .experience {
+    padding: 30px 5%;
+  }
+
+  .job {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .job h3 {
+    font-size: 1.3rem;
+  }
+  .job ul li {
+    display: inline;
+  }
+  
+
+  .icon {
+    font-size: 1.2rem;
+  }
+}
+.dark-mode .project-card {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .project-card h3 {
+  color: #bb86fc;
+}
+
+.dark-mode .project-card p {
+  color: white;
+}
+
+.dark-mode .project-card .btn {
+  background: #6a11cb;
+}
+
+.dark-mode .project-card .btn:hover {
+  background: #4a0ba1;
+}
